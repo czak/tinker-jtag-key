@@ -5,7 +5,7 @@ Plugs into the MicroSD card socket and exposes the JTAG signals on a standard 20
 
 ## Note
 
-**Pirst prototype, not tested!**
+**First prototype, not tested!**
 
 ## Preview
 
