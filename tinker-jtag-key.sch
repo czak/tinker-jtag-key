@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tinker-jtag-key:Micro_SD_Card P1
+U 1 1 5EBE2C59
+P 2700 3250
+F 0 "P1" H 2757 3917 50  0000 C CNN
+F 1 "Micro_SD_Card" H 2757 3826 50  0000 C CNN
+F 2 "tinker-jtag-key:MicroSD_Card_Pins" H 4550 3550 50  0001 C CNN
+F 3 "" H 2900 3250 50  0001 C CNN
+	1    2700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L tinker-jtag-key:112J-TXAR-R01 J1
+U 1 1 5EBE3360
+P 5450 3350
+F 0 "J1" H 5730 3396 50  0000 L CNN
+F 1 "112J-TXAR-R01" H 5730 3305 50  0000 L CNN
+F 2 "tinker-jtag-key:MicroSD_Card_Socket" H 5650 3300 50  0001 C CNN
+F 3 "" H 5650 3300 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+Text Label 3500 2950 0    50   ~ 0
+DAT2
+Wire Wire Line
+	3400 2950 3500 2950
+Text Label 4950 2950 2    50   ~ 0
+DAT2
+Wire Wire Line
+	5050 2950 4950 2950
+Text Label 4950 3050 2    50   ~ 0
+CD-DAT3
+Text Label 4950 3150 2    50   ~ 0
+CMD
+Text Label 4950 3350 2    50   ~ 0
+CLK
+Text Label 4950 3550 2    50   ~ 0
+DAT0
+Text Label 4950 3650 2    50   ~ 0
+DAT1
+Text Label 3500 3050 0    50   ~ 0
+CD-DAT3
+Text Label 3500 3150 0    50   ~ 0
+CMD
+Text Label 3500 3350 0    50   ~ 0
+CLK
+Text Label 3500 3550 0    50   ~ 0
+DAT0
+Text Label 3500 3650 0    50   ~ 0
+DAT1
+$Comp
+L power:VDD #PWR0101
+U 1 1 5EBE8978
+P 3950 2650
+F 0 "#PWR0101" H 3950 2500 50  0001 C CNN
+F 1 "VDD" H 3967 2823 50  0000 C CNN
+F 2 "" H 3950 2650 50  0001 C CNN
+F 3 "" H 3950 2650 50  0001 C CNN
+	1    3950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EBE8EE2
+P 3950 4150
+F 0 "#PWR0102" H 3950 3900 50  0001 C CNN
+F 1 "GND" H 3955 3977 50  0000 C CNN
+F 2 "" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EBE9714
+P 4500 4150
+F 0 "#PWR0103" H 4500 3900 50  0001 C CNN
+F 1 "GND" H 4505 3977 50  0000 C CNN
+F 2 "" H 4500 4150 50  0001 C CNN
+F 3 "" H 4500 4150 50  0001 C CNN
+	1    4500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0104
+U 1 1 5EBEB21A
+P 4500 2650
+F 0 "#PWR0104" H 4500 2500 50  0001 C CNN
+F 1 "VDD" H 4517 2823 50  0000 C CNN
+F 2 "" H 4500 2650 50  0001 C CNN
+F 3 "" H 4500 2650 50  0001 C CNN
+	1    4500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3250 3950 3250
+Wire Wire Line
+	3950 3250 3950 2650
+Wire Wire Line
+	3400 3450 3950 3450
+Wire Wire Line
+	3950 3450 3950 4150
+Wire Wire Line
+	4500 2650 4500 3250
+Wire Wire Line
+	4500 3250 5050 3250
+Wire Wire Line
+	5050 3450 4500 3450
+Wire Wire Line
+	4500 3450 4500 4150
+Wire Wire Line
+	3400 3050 3500 3050
+Wire Wire Line
+	3500 3150 3400 3150
+Wire Wire Line
+	3400 3350 3500 3350
+Wire Wire Line
+	3500 3550 3400 3550
+Wire Wire Line
+	3400 3650 3500 3650
+Wire Wire Line
+	4950 3050 5050 3050
+Wire Wire Line
+	5050 3150 4950 3150
+Wire Wire Line
+	4950 3350 5050 3350
+Wire Wire Line
+	5050 3550 4950 3550
+Wire Wire Line
+	4950 3650 5050 3650
+NoConn ~ 5050 3750
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J2
+U 1 1 5EC005CE
+P 8100 3350
+F 0 "J2" H 7571 3396 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 7571 3305 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8550 2300 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 7750 2100 50  0001 C CNN
+	1    8100 3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 3850
+NoConn ~ 8700 3750
+NoConn ~ 8100 2550
+NoConn ~ 8700 2950
+NoConn ~ 8700 3150
+$Comp
+L power:VDD #PWR0105
+U 1 1 5EC0623F
+P 8000 2150
+F 0 "#PWR0105" H 8000 2000 50  0001 C CNN
+F 1 "VDD" H 8017 2323 50  0000 C CNN
+F 2 "" H 8000 2150 50  0001 C CNN
+F 3 "" H 8000 2150 50  0001 C CNN
+	1    8000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5EC0643E
+P 8000 4400
+F 0 "#PWR0106" H 8000 4150 50  0001 C CNN
+F 1 "GND" H 8005 4227 50  0000 C CNN
+F 2 "" H 8000 4400 50  0001 C CNN
+F 3 "" H 8000 4400 50  0001 C CNN
+	1    8000 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8800 3350 0    50   ~ 0
+DAT0
+Text Label 8800 2850 0    50   ~ 0
+DAT1
+Text Label 8800 3550 0    50   ~ 0
+DAT2
+Text Label 8800 3250 0    50   ~ 0
+CD-DAT3
+Text Label 8800 3450 0    50   ~ 0
+CLK
+Wire Wire Line
+	8000 2150 8000 2550
+Wire Wire Line
+	8000 4150 8000 4400
+Wire Wire Line
+	8700 3550 8800 3550
+Wire Wire Line
+	8800 3450 8700 3450
+Wire Wire Line
+	8700 3350 8800 3350
+Wire Wire Line
+	8800 3250 8700 3250
+Wire Wire Line
+	8700 2850 8800 2850
+$EndSCHEMATC
